@@ -1,0 +1,20 @@
+<table class="reportTable" name="reportTable">
+	<tr class="reportTable-tr1">
+		<th>Location</th>
+		<th>Date</th>
+		<th>Note</th>
+		<th>Disarmed</th>
+		<th>Verified</th>
+		<th>View</th>
+	</tr>
+	{{#each this.reports}}
+	<tr class="reportTable-tr2">
+		<td>({{lat}},{{lng}})</td>
+		<td>{{reported}}</td>
+		<td>{{note}}</td>
+		<td>{{disarmed}}</td>
+		<td>{{verified}}</td>
+		<td><button onclick="redirectToReport({{mine_id}},{{reporter_id}})"><i class="fas fa-search"></i></i></button></td>
+	</tr>
+	{{/each}}
+</table>

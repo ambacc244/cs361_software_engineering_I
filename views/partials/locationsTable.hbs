@@ -1,0 +1,12 @@
+<table class="locationTable" name="locationsTable">
+	<tr class="locationTable-tr1">
+		<th>Title</th>
+		<th>Location</th>
+	</tr>
+	{{#each this.locations}}
+	<tr class="locationTable-tr2">
+		<td>{{title}}</td>
+		<td>({{lat}},{{lng}})</td>
+	</tr>
+	{{/each}}
+</table>

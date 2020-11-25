@@ -1,0 +1,12 @@
+<!-- ORDER MATTERS. DON'T CHANGE THE ORDER.-->
+<div class="map-container">
+	<input type="hidden" id="isLoggedIn" value="{{isLoggedIn}}">
+	<div id="mapid" style="width: 600px; height: 400px;"></div>
+  	<script src="/static/mapSearch.js"></script>
+
+	{{#if isLoggedIn}}
+	<table id="locationsMapTable">
+	</table>
+	{{/if}}
+</div>
+

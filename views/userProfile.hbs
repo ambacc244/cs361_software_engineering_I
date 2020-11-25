@@ -1,0 +1,11 @@
+<div class="profile-container">
+  <h3 class="profile"> <strong><i class="fa fa-envelope-o" aria-hidden="true"></i>Email:</strong> {{email}} <button onclick="logout()"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</button> </h3>
+
+  <!--Locations-->
+  <h3 class="profile-favorites"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>Favorite Locations</h3>
+  {{> locationsTable }}
+
+  <!--Reports-->
+  <h3 class="profile-reports"><i class="fa fa-file-text-o" aria-hidden="true"></i>My Reports</h3>
+    {{> reportsTable }}
+<div>

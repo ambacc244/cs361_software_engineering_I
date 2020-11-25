@@ -1,0 +1,166 @@
+.reportTable td, .reportTable th, .locationTable th, .locationTable th {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.reportTable-tr1 th, .locationTable th {
+  text-align: center;
+}
+
+.reportTable, .locationTable {
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 0;
+  font-family: normal;
+  margin: 0 0 10px 0;
+}
+
+.report-container, .profile-container, .reportForm-container, .reportTable-container, .map-container {
+  position: relative;
+  background: #FFFFFF;
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 80px;
+  text-align: left;
+  box-shadow: 0 0 10px 5px #8A8F91;
+}
+
+.reportForm-container {
+  max-width: 500px;
+}
+.map-container, .report-container {
+  max-width: 600px;
+  padding: 50px;
+}
+.report-map {
+  margin: 30px 0 15px 0;
+}
+.report-container {
+  padding: 80px 80px 90px 80px;
+}
+.reportForm-container {
+  max-width: 450px;
+  font-size: 22px;
+  padding: 60px 80px 80px;
+}
+.reportTable-container, .profile-container {
+  max-width: 900px;
+}
+
+.reportTable-tr1, .locationTable-tr1 {
+  background-color: #01A9EE;
+  color: #FFFFFF;
+}
+
+.reportTable-tr2:nth-child(odd), .locationTable-tr2:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+.reportTable-tr1 th, .reportTable-tr2:nth-child(odd) td, .locationTable-tr1 th, .locationTable-tr2:nth-child(odd) td {
+  border: 1px solid white;
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.reportTable-tr2:nth-child(even) td, .locationTable-tr2:nth-child(odd) td {
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.reportTable-tr2 td:first-child, .locationTable-tr2 td:first-child{
+  border-left: 1px solid white;
+}
+
+.reportTable-tr2 td:last-child, .locationTable-tr2 td:last-child{
+  border-right: 1px solid white;
+}
+
+.report, .reportForm {
+  margin: 0 0 20px;
+  text-align: center;
+  color: #6D6D6D;
+  font-size: 35px;
+}
+
+.report-container button, .reportForm-container button, .profile button {
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  border: 0;
+  margin: 10px 0 0 20px;
+  padding: 15px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  opacity: 0.9;
+  float: right;
+  border-radius: 8px;
+}
+
+.report-container button {
+  display: inline-block;
+}
+
+.reportTable button {
+  border-radius: 100%;
+  padding: 8px;
+  font-size: 14px;
+  margin: 0;
+  background-color: #9B9C9C;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.9;
+  display: flex;
+  justify-content : center;
+}
+button:hover {
+  opacity: 1;
+}
+
+button:focus {
+  outline: none;
+}
+
+.fa-trash-alt, .fa-plus-circle, .fa-envelope, .fa-map-marker-alt, .fa-file-alt, .fa-envelope-o, .fa-thumbs-o-up, .fa-file-text-o, .fa-sign-out {
+  padding: 0 7px 0 0;
+}
+
+.fa-sistrix{
+  padding: 0 10px 0 0;
+}
+
+.email-button, .reportForm-container button, .profile button {
+  background-color: #01A9EE;
+}
+
+.delete-button{
+  background-color: #F03F21;
+}
+
+.email-report-button {
+  background-color: #01A9EE;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  border: 0;
+  margin: 20px;
+  padding: 15px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  opacity: 0.9;
+  float: right;
+  border-radius: 8px;
+
+}
+.profile button {
+  border-radius: 50px;
+  padding: 8px 15px;
+  font-size: 12px;
+  margin: 0 20px;
+  position:absolute;
+}
+
+.profile, .profile-favorites, .profile-reports {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+}

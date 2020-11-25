@@ -1,0 +1,265 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #FFFFFF;
+  margin: 0px;
+}
+
+.site-title {
+  font-family: "Roboto";
+	background-color: #2FB1E4;
+	font-size:22px;
+	color: white;
+	margin: 0px;
+	padding: 20px 30px 20px;
+	display: flex;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+a {
+	text-decoration: none;
+}
+
+.fa-bomb {
+	padding: 0 10px 0;
+	font-size: 50px;
+}
+
+.fa-question-circle-o {
+  padding: 0 5px 0;
+}
+
+.login-container {
+  position: relative;
+  background-color: #FFFFFF;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 10px 5px #8A8F91;
+}
+
+.register-container, .search-container {
+  position: relative;
+  background-color: #FFFFFF;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 45px;
+  text-align: left;
+  box-shadow: 0 0 10px 5px #8A8F91;
+}
+
+.login-container button, .register-container button, .search-container button {
+  font-family: "Roboto", sans-serif;
+  background-color: #2FB1E0;
+  color: #FFFFFF;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  font-size: 15px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button:focus {
+  outline: none;
+}
+
+.search-question {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.search-question1, .search-question2, .search-question3 {
+  margin-left: 20px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+
+}
+
+.question1 {
+  font-family: "Roboto", sans-serif;
+  background: #EEEEEE;
+  width: 40px;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.login-extra {
+  margin: 0 0 10px 0;
+}
+
+.login-extra a {
+  font-size: 12px;
+  color: #2FB1E0;
+  cursor: pointer;
+}
+
+.login-container input, .register-container input, .reportForm-container input {
+  font-family: "Roboto", sans-serif;
+  background-color: #EEEEEE;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.register-container input {
+  margin: 8px 0 15px;
+}
+.reportForm-container input {
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+.search-question1 input {
+  width: 60px;
+  padding: 5px;
+  margin: 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #EEEEEE;
+  color: #6D6D6D;
+}
+
+.reportForm-container input.reportForm-location {
+  width: 130px;
+
+}
+
+.reportForm-container input.reportForm-note {
+  width: 350px
+}
+
+.login-container input:focus, .register-container input:focus, .search-question1 input:focus, .reportForm-container input:focus {
+    background-color: #DADADA;
+    outline: none;
+}
+
+.search-question, .search-fieldset{
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.login {
+  margin: 10px 0 20px auto;
+  text-align: center;
+  color: #6D6D6D;
+  font-size: 35px;
+}
+
+.register, .search {
+  margin: 10px 0 20px auto;
+  text-align: left;
+  font-size: 35px;
+  color: #6D6D6D;
+}
+
+.search {
+  margin: 0 0 0 15px;
+  font-size: 40px;
+
+}
+
+.navlist {
+  background-color: #E8E8E8;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.navitem {
+    float: left;
+}
+
+.navitem a {
+  color: black;
+  padding: 10px 33px;
+  text-align: center;
+  display: block;
+}
+
+.navitem a:hover {
+  background-color: #9B9B9B;
+  color: white;
+}
+
+.search-fieldset, .search-fieldset3{
+  position:relative;
+  border: none;
+  border-bottom: 1px solid;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.search-fieldset3{
+  border: none;
+  margin-bottom: 10px;
+}
+
+.search-decision {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.search-decision input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.search-decision:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.search-decision input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.search-decision input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.search-decision .checkmark:after {
+ 	top: 7px;
+	left: 7px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: white;
+}

@@ -1,0 +1,14 @@
+<script src="/static/reportFormView.js"></script>
+
+<div class="reportForm-container">
+	<h3 class="reportForm"></i>Create report</h3>
+	<div id="reportSortaForm">
+		<i class="fas fa-map-marker-alt"></i>Location: (  <input class="reportForm-location" type="number" id="lat">  ,   <input class="reportForm-location" type="number" id="lng"> )
+		<br/>
+		<i class="far fa-file-alt"></i>Note: <input class="reportForm-note" type="txt" id="note">
+		<br/>
+		<input type="hidden" id="disarmed" value="0">
+		<input type="hidden" id="verified" value="0">
+	</div>
+	<button onclick="createReport()"><i class="fas fa-plus-circle"></i>Create</button>
+</div>

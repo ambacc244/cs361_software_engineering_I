@@ -1,0 +1,58 @@
+<script src="/static/searchFormView.js"></script>
+
+<form class="search-container" action="/q" method="get" onsubmit="disableEmptyInputs(this)">
+	<h3 class= "search"><i class="fab fa-sistrix"></i>Search</h3>
+
+	<fieldset class="search-fieldset">
+		<legend class="search-question"><i class="fa fa-question-circle-o" aria-hidden="true"></i>Date Range</legend>
+		<div class="search-question1">
+			<label for="start"><b>Start:</b></label>
+			<input type="number" name="sY" placeholder="yy"> /
+			<input type="number" name="sM" placeholder="mm"> /
+			<input type="number" name="sD" placeholder="dd">
+		</div>
+		<br/>
+		<div class="search-question1">
+			<label for="end"><b>End:</b></label>
+			<input type="number" name="eY" placeholder="yy"> /
+			<input type="number" name="eM" placeholder="mm"> /
+			<input type="number" name="eD" placeholder="dd">
+		</div>
+	</fieldset>
+
+	<fieldset class= "search-fieldset">
+		<legend class="search-question"><i class="fa fa-question-circle-o" aria-hidden="true"></i></i>Mine Status</legend>
+		<div class="search-question2">
+			<label class="search-decision" for="armed">Armed
+				<input type="radio" id="armed" name="disarmed" value="1"><span class="checkmark"></span>
+			</label>
+
+			<label class="search-decision" for="disarmed">Disarmed
+				<input type="radio" id="disarmed" name="disarmed" value="0"><span class="checkmark"></span>
+			</label>
+
+			<label class="search-decision" for="both-armed">Both
+				<input type="radio" id="both-armed" name="disarmed" value="-1"><span class="checkmark"></span>
+			</label>
+		</div>
+	</fieldset>
+
+	<fieldset class= "search-fieldset3">
+		<legend class="search-question"><i class="fa fa-question-circle-o" aria-hidden="true"></i>Mine Verification</legend>
+		<div class="search-question3">
+			<label class="search-decision" for="verified">Verified
+				<input type="radio" id="verified" name="verified" value="1"><span class="checkmark"></span>
+			</label>
+
+			<label class="search-decision" for="not-verified">Not Verified
+				<input type="radio" id="not-verified" name="verified" value="0"><span class="checkmark"></span>
+			</label>
+
+			<label class="search-decision" for="both-verified">Both
+					<input type="radio" id="both-verified" name="verified" value="-1"><span class="checkmark"></span>
+				</label>
+		</div>
+	</fieldset>
+
+	<button input type="submit">Search</button>
+</form>

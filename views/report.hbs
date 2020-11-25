@@ -1,0 +1,21 @@
+<!-- ORDER MATTERS. DON'T CHANGE THE ORDER.-->
+<div class="report-container">
+	<h3 class="report">Mine Report</h3>
+	<input type="hidden" id="lat" value="{{data.lat}}">
+	<input type="hidden" id="lng" value="{{data.lng}}">
+	<p>Date Reported: {{data.reported}}</p>
+	<p>Notes: {{data.note}}</p>
+	<p>Mine has been verified: {{data.verified}}</p>
+	<p>Mine has been disarmed: {{data.disarmed}}</p>
+	<p>GPS Latitude: {{data.lat}}</p>
+	<p>GPS Longitude: {{data.lng}}</p>
+	<div class="report-map" id="mapid" style="width: 600px; height: 400px;"></div>
+
+	<button class="email-button" onclick="mailCurrentLink('Cambodian Landmine Report', 'Here is a report a for Cambodian landmine... ')">Email Report</button>
+
+	{{#if isLoggedIn}}
+		<button class="delete-button" type="button" onclick="sendDelete({{data.mine_id}}, {{data.reporter_id}})">Delete</button>
+		<p id="reportErrorMessage"></p>
+	{{/if}}
+</div>
+<script src="/static/report.js"></script>
